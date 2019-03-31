@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { IconsModule } from '../icons/icons.module';
 import { HeaderComponent } from '../header/header.component';
 
 @NgModule({
@@ -9,7 +10,13 @@ import { HeaderComponent } from '../header/header.component';
     CommonModule,
     NgbModule
   ],
-  declarations: [ HeaderComponent ],
-  exports: [ HeaderComponent, NgbModule ]
+  declarations: [
+    HeaderComponent
+  ],
+  exports: [
+    HeaderComponent,
+    NgbModule,
+    IconsModule
+  ]
 })
 export class SharedModule { }

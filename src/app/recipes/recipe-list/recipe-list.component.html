@@ -7,14 +7,18 @@
 <hr>
 <div class="row">
   <div class="list-group container-fluid">
-    <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
-      <div class="float-left">
-        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-        <p class="list-group-text">{{ recipe.description }}</p>
-      </div>
-      <span class="float-right">
-        <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid rounded" style="max-height: 50px;">
-      </span>
+    <a href="#" 
+      class="list-group-item clearfix" 
+      *ngFor="let recipe of recipes">
+        <div class="float-left">
+          <i-file-text class="float-left align-self-start mr-2"></i-file-text>
+              <h5 class="mt-0 mb-2">{{ recipe.name }}</h5>
+              <p>{{ recipe.description }}</p>
+        </div>
+      <img [src]="recipe.imagePath" 
+        alt="{{ recipe.name }}" 
+        class="img-fluid rounded ml-2 float-right" 
+        style="max-height: 50px;">
     </a>
     <app-recipe-item></app-recipe-item>
   </div>
