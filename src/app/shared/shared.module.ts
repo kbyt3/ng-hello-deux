@@ -9,7 +9,7 @@ import { HeaderComponent } from '../header/header.component';
     CommonModule,
     NgbModule
   ],
-  declarations: [ HeaderComponent],
-  exports: [ HeaderComponent ]
+  declarations: [ HeaderComponent ],
+  exports: [ HeaderComponent, NgbModule ]
 })
 export class SharedModule { }
