@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { IconsModule } from '../icons/icons.module';
+import { IconsModule } from './icons.module';
 import { HeaderComponent } from '../header/header.component';
 
 @NgModule({
